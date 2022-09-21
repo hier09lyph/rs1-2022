@@ -1,0 +1,184 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+}
+
+section {
+    display: flex;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    }
+
+h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 24px;
+    line-height: 120%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*wrapper start*/
+.wrapper {
+    width: 1160px;
+    height: 100%;
+    margin: 0 auto;
+}
+/*wrapper end*/
+
+
+
+/*header start*/
+
+header {
+    position: relative;
+    display: flex;
+    height: 80px;
+    color: #FFFFFF;
+    background-color: #000000;
+    margin-bottom: -80px;
+    z-index: 10;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo_and_nav {
+    display: flex;
+    gap: 63px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 82px;
+    height: 52px;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+
+.logo-text {
+    position: relative;
+    font-size: 19.0145px;
+    line-height: 120%;
+}
+
+.logo-bamboo {
+    position: absolute;
+    top: 45%;
+    left: 12.5%;
+    width: 20px;
+    height: 20.98px;
+    background-image: url(../../assets/icons/bamboo.svg);
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 472px;
+    font-weight: 500;
+}
+
+.underline-one {
+    color: #fdfdfd;
+    /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    /* Убираем подчеркивание */
+}
+.underline-one:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    /* Высота линии */
+    background-color: #FE9013;
+    /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s;
+    /* Время эффекта */
+}
+
+.underline-one:hover:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    /* Высота линии */
+    background-color: #FE9013;
+    /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;
+    /* Время эффекта */
+}
+
+.active-page {
+    background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bolder;
+}
+
+.nav-item .active-page a {
+    text-decoration: none;
+    user-select: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+.designed-text {
+    font-weight: 500;
+}
+
+/*header end*/
