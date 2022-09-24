@@ -1,4 +1,3 @@
-
 html {
     scroll-behavior: smooth;
 }
@@ -24,7 +23,7 @@ h1 {
     line-height: 120%;
     text-align: center;
     color: #FFFFFF;
-    }
+}
 
 h2 {
     font-weight: 400;
@@ -53,15 +52,39 @@ a {
     color: inherit;
 }
 
+.button {
+    width: 298px;
+    height: 54px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border: none;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background: #E47209;
+}
+
+.button:active {
+    background: #4B9200;
+}
+
 
 /*wrapper start*/
+
 .wrapper {
     width: 1160px;
     height: 100%;
     margin: 0 auto;
 }
-/*wrapper end*/
 
+
+/*wrapper end*/
 
 
 /*header start*/
@@ -76,14 +99,14 @@ header {
     z-index: 10;
 }
 
-.header-box {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
-.logo_and_nav {
+.logo-and-nav {
     display: flex;
     gap: 63px;
 }
@@ -132,6 +155,7 @@ nav {
     text-decoration: none;
     /* Убираем подчеркивание */
 }
+
 .underline-one:after {
     content: "";
     display: block;
@@ -181,4 +205,333 @@ nav {
     font-weight: 500;
 }
 
+
 /*header end*/
+
+
+/*whatch_animal start*/
+
+.watch-animal {
+    height: 780px;
+    background-image: url(../../assets/images/Giant\ Panda.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.watch-animal-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.watch-animal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    width: 500px;
+    padding-bottom: 100px;
+}
+
+.watch-animal-text {
+    width: 500.31px;
+    height: 400px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 106.496px;
+    line-height: 75%;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.watch-animal-ellipse {
+    content: '';
+    position: absolute;
+    top: -74px;
+    left: -73px;
+    width: 465px;
+    height: 465px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.yellow-text {
+    color: #FFEE2E;
+}
+
+.watch-animal-button {
+    align-self: center;
+}
+
+
+/*whatch_animal end*/
+
+
+/*backstage start*/
+
+.backstage {
+    padding-top: 140px;
+    padding-bottom: 90px;
+    background-image: url(../../assets/images/flower_foto1.png);
+    background-position: center right 0;
+    ;
+    background-repeat: no-repeat;
+}
+
+.backstage-container {
+    display: flex;
+    align-items: center;
+    gap: 86px;
+}
+
+.backstage-img {
+    min-width: 609px;
+    height: 403px;
+    background: url(../../assets/images/bamboo-cap.jpg);
+    backdrop-filter: blur(2px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backstage-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.backstage-text .subtitle {
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 13px;
+}
+
+
+/*backstage end*/
+
+
+/*pets start*/
+
+.pets {
+    padding-top: 18px;
+    padding-bottom: 100px;
+    background: url(../../assets/images/palm_foto.png) bottom left 0 no-repeat, url(../../assets/images/strelitzia\ 1.png) bottom right 0 no-repeat;
+}
+
+.pets-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.cards-container-buttons {
+    position: absolute;
+    top: 402px;
+    left: -81px;
+    display: flex;
+    justify-content: space-between;
+    width: 1322px;
+}
+
+.cards-btn-left,
+.cards-btn-right {
+    width: 62px;
+    height: 62px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+}
+
+.cards-btn-left {
+    background-image: url(../../assets/icons/left.svg), linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+.cards-btn-right {
+    background-image: url(../../assets/icons/right.svg), linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+.cards-btn-left:hover {
+    transform: scale(1.05);
+}
+
+.cards-btn-right:hover {
+    transform: scale(1.05);
+}
+
+.cards-btn-left:active {
+    background-image: url(../../assets/icons/left.svg), linear-gradient(113.96deg, #4B9200 1.49%, #4B9200 101.44%);
+    transform: scale(1);
+}
+
+.cards-btn-right:active {
+    background-image: url(../../assets/icons/right.svg), linear-gradient(113.96deg, #4B9200 1.49%, #4B9200 101.44%);
+    transform: scale(1);
+}
+
+.pets-slider {
+    justify-content: center;
+}
+
+.cards-container {
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px 20px;
+}
+
+.pet-card {
+    overflow: hidden;
+    position: relative;
+    /*box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
+    width: 366px;
+    height: 426px;
+    background-color: #FFFFFF;
+    border: 1px solid #FE9013;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.pet-card::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 364px;
+    background-color: rgba(0, 0, 0, 5);
+    z-index: 100;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pet-img {
+    width: 100%;
+    height: 368px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.pet-card:hover {
+    background-color: #FE9013;
+}
+
+.pet-card:hover .pet-img {
+    background-size: 105.4%;
+}
+
+.pet-card:hover::before {
+    opacity: 0.5;
+}
+
+.pet1-img {
+    background-image: url(../../assets/images/Rectangle\ 5.png);
+}
+
+.pet2-img {
+    background-image: url(../../assets/images/Rectangle\ 5\ \(1\).png);
+}
+
+.pet3-img {
+    background-image: url(../../assets/images/Rectangle\ 5\ \(2\).png);
+}
+
+.pet4-img {
+    background-image: url(../../assets/images/Rectangle\ 5\ \(3\).png);
+}
+
+.pet5-img {
+    background-image: url(../../assets/images/Rectangle\ 5\ \(4\).png);
+}
+
+.pet6-img {
+    background-image: url(../../assets/images//Rectangle\ 5\ \(5\).png);
+}
+
+.pet-description-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 8px 0 16px;
+    transition: 1s;
+}
+
+.pet-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pet-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.pet-areal {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+}
+
+.pet-food-logo {
+    width: 48px;
+    height: 38px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: 0.1s;
+}
+
+.food-fruit {
+    background-image: url(../../assets/icons/banana-bamboo_icon.svg);
+}
+
+.food-meat {
+    background-image: url(../../assets/icons/meet-fish_icon.svg);
+    margin-top: -6px;
+}
+
+.pet-card:hover .pet-description-container {
+    top: -80px;
+    color: #FFFFFF;
+    z-index: 200;
+}
+
+.pet-card:hover .pet-name {
+    color: #FFFFFF;
+}
+
+.pet-card:hover .pet-food-logo {
+    opacity: 0;
+}
+
+.choose_favorite_button {
+    align-self: center;
+}
+
+
+/*pets end*/
